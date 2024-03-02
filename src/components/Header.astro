@@ -1,0 +1,26 @@
+---
+import HeaderButton from './HeaderButton.astro'
+console.log()
+---
+
+<header class="py-8 px-4 mx-auto max-w-xl lg:py-16 lg:px-6">
+    <div class="mx-auto text-center mb-8 lg:mb-16">
+        <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
+            Guia de Astro
+        </h2>
+        <p class="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+            Toda la informacion de este framework
+        </p>
+    </div>
+
+
+    <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
+        
+        <HeaderButton class="text-white" href="/index"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-debian" slot="after"  width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17c-2.397 -.943 -4 -3.153 -4 -5.635c0 -2.19 1.039 -3.14 1.604 -3.595c2.646 -2.133 6.396 -.27 6.396 3.23c0 2.5 -2.905 2.121 -3.5 1.5c-.595 -.621 -1 -1.5 -.5 -2.5" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg>Primeros conocimientos</HeaderButton>
+        
+        <HeaderButton class="text-white" href="/about"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-script" slot="after" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 20h-11a3 3 0 0 1 0 -6h11a3 3 0 0 0 0 6h1a3 3 0 0 0 3 -3v-11a2 2 0 0 0 -2 -2h-10a2 2 0 0 0 -2 2v8" /></svg>Documentacion</HeaderButton>
+
+
+        <HeaderButton class="text-white" href="/oldest"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-presentation" slot="after" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 4l18 0" /><path d="M4 4v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-10" /><path d="M12 16l0 4" /><path d="M9 20l6 0" /><path d="M8 12l3 -3l2 2l3 -3" /></svg>Sobre el proyecto</HeaderButton>
+    </nav>
+</header>
